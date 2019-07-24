@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28803.202
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGT.API", "DGT.API\DGT.API.csproj", "{07792372-84DA-4E93-8EC8-94A2676E5B66}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DGT.API", "DGT.API\DGT.API.csproj", "{07792372-84DA-4E93-8EC8-94A2676E5B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DGT.Domain", "DGT.Domain\DGT.Domain.csproj", "{A3010131-A512-4FEF-9EBA-C0A63A3E6342}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{07792372-84DA-4E93-8EC8-94A2676E5B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07792372-84DA-4E93-8EC8-94A2676E5B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07792372-84DA-4E93-8EC8-94A2676E5B66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3010131-A512-4FEF-9EBA-C0A63A3E6342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3010131-A512-4FEF-9EBA-C0A63A3E6342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3010131-A512-4FEF-9EBA-C0A63A3E6342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3010131-A512-4FEF-9EBA-C0A63A3E6342}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

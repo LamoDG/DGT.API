@@ -34,7 +34,11 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\DGT.Domain.csproj": {
+                "projectPath": "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\DGT.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,6 +62,67 @@
               "version": "[2.1.2, )"
             },
             "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.1.9, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\DGT.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\DGT.Domain.csproj",
+        "projectName": "DGT.Domain",
+        "projectPath": "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\DGT.Domain.csproj",
+        "packagesPath": "C:\\Users\\Temel9057\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Temel9057\\source\\repos\\DGT.API\\DGT.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Temel9057\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.2.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\DevExpress 18.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "G:\\Unidades compartidas\\DPT Des\\NuGet": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
