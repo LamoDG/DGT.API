@@ -16,7 +16,6 @@ namespace DGT.API.Controllers
     public class AuthController : ControllerBase
     {
         private readonly IConfiguration _configuration;
-
         public AuthController(IConfiguration configuration)
         {
             _configuration = configuration;
@@ -52,5 +51,6 @@ namespace DGT.API.Controllers
 
             return this.Ok(tokenHandler.WriteToken(createdToken));
         }
+
     }
 }
