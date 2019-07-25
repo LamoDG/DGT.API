@@ -9,6 +9,6 @@ namespace DGT.Domain.Models
     {
         [Key]
         public string Nombre { get; set; }
-        public List<ModeloCoche> Modelos { get; set; }
+        public ICollection<ModeloCoche> Modelos { get; set; }
     }
 }

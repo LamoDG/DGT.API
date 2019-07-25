@@ -15,6 +15,9 @@ namespace DGT.Domain.Models
         {
             modelBuilder.Entity<CocheConductor>().HasKey(cc => new { cc.Matricula, cc.DNI });
         }
+
+
+
         public DbSet<Coche> Coches { get; set; }
         public DbSet<Conductor> Conductores { get; set; }
         public DbSet<Infraccion> Infracciones { get; set; }

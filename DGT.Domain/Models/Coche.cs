@@ -10,10 +10,6 @@ namespace DGT.Domain.Models
     {
         [Key]
         public string Matricula { get; set; }
-        public int Marca { get; set; }
-        //[Column(Order = 1)]
-        //public Conductor ConductorHabitual { get; set; }
-
         public ICollection<CocheConductor> ConductoresHabituales { get; set; }
         public ModeloCoche Modelo { get; set; }
     }

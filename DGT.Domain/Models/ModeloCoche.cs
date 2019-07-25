@@ -8,8 +8,8 @@ namespace DGT.Domain.Models
    public class ModeloCoche
     {
         [Key]
-        public int Nombre { get; set; }
+        public string Nombre { get; set; }
         public MarcaCoche Marca { get; set; }
-        public List<Coche> Coches { get; set; }
+        public ICollection<Coche> Coches { get; set; }
     }
 }
