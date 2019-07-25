@@ -42,7 +42,7 @@ namespace DGT.Data.Repositories
             {
                 if (!_context.Vehiculo.Any(veh =>veh.Matricula.Equals(vehiculo.Matricula)))
                 {
-                    return GetNumeroVehiculosAsociados(vehiculo) <= Constants.Parameters.NUM_MAX_VEHÍCULOS_HABITUALES;
+                    return GetNumeroVehiculosAsociados(vehiculo) <= Constants.Parameters.NUM_MAX_VEHICULOS_HABITUALES;
                 }
                 throw new DataLayerException(Constants.Messages.Vehiculo.YA_EXISTE);
             }

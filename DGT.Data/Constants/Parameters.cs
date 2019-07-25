@@ -9,7 +9,7 @@ namespace DGT.Data.Constants
     /// </summary>
     public class Parameters
     {
-        public const int NUM_MAX_VEHÍCULOS_HABITUALES = 10;
+        public const int NUM_MAX_VEHICULOS_HABITUALES = 10;
 
     }
 }
