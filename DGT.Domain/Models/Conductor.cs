@@ -12,6 +12,6 @@ namespace DGT.Domain.Models
         public string Nombre { get; set; }
         public string Apellidos { get; set; }
         public int Puntos { get; set; }
-        public ICollection<CocheConductor> Coches { get; set; }
+        public ICollection<VehiculoConductor> Vehiculo { get; set; }
     }
 }

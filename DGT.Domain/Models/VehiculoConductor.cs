@@ -4,9 +4,9 @@ using System.Text;
 
 namespace DGT.Domain.Models
 {
-    public class CocheConductor
+    public class VehiculoConductor
     {
-        public Coche Coche { get; set; }
+        public Vehiculo Vehiculo { get; set; }
         public string Matricula { get; set; }
 
         public Conductor Conductor { get; set; }

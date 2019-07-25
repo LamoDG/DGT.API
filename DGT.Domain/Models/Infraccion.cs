@@ -8,7 +8,7 @@ namespace DGT.Domain.Models
     {
         public int InfraccionId { get; set; }
         public Conductor Conductor { get; set; }
-        public Coche Coche { get; set; }
+        public Vehiculo Vehiculo { get; set; }
         public DateTime Fecha { get; set; }
         public TipoInfraccion TipoInfraccion { get; set; }
     }

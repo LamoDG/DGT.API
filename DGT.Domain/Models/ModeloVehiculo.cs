@@ -5,11 +5,11 @@ using System.Text;
 
 namespace DGT.Domain.Models
 {
-   public class ModeloCoche
+   public class ModeloVehiculo
     {
         [Key]
         public string Nombre { get; set; }
-        public MarcaCoche Marca { get; set; }
-        public ICollection<Coche> Coches { get; set; }
+        public MarcaVehiculo Marca { get; set; }
+        public ICollection<Vehiculo> Vehiculos { get; set; }
     }
 }

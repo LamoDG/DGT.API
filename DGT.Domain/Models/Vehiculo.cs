@@ -6,11 +6,11 @@ using System.Text;
 
 namespace DGT.Domain.Models
 {
-    public class Coche
+    public class Vehiculo
     {
         [Key]
         public string Matricula { get; set; }
-        public ICollection<CocheConductor> ConductoresHabituales { get; set; }
-        public ModeloCoche Modelo { get; set; }
+        public ICollection<VehiculoConductor> ConductoresHabituales { get; set; }
+        public ModeloVehiculo Modelo { get; set; }
     }
 }

@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace DGT.Data.Repositories
 {
-    internal class EntityBaseRepository<T> : IEntityBaseRepository<T> where T : class
+    public class EntityBaseRepository<T> : IEntityBaseRepository<T> where T : class
     {
-        DGTContext _context;
+       protected readonly DGTContext _context;
 
         public EntityBaseRepository(DGTContext context)
         {
@@ -70,5 +70,40 @@ namespace DGT.Data.Repositories
             EntityEntry dbEntityEntry = _context.Entry<T>(entity);
             dbEntityEntry.State = EntityState.Modified;
         }
+
+        public virtual async Task<T> GetSingleAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            foreach (Expression<Func<T, object>> includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.Where(predicate).FirstOrDefaultAsync();
+        }
+        public async Task<IEnumerable<T>> FindByIncludingAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>().Where(predicate);
+
+            foreach (Expression<Func<T, object>> includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.ToListAsync();
+        }
+
+        public virtual async Task<IEnumerable<T>> AllIncludingAsync(params Expression<Func<T, object>>[] includeProperties)
+        {
+            IQueryable<T> query = _context.Set<T>();
+            foreach (Expression<Func<T, object>> includeProperty in includeProperties)
+            {
+                query = query.Include(includeProperty);
+            }
+
+            return await query.ToListAsync();
+        }
+
+
     }
 }

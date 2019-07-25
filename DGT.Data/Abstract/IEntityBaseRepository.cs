@@ -27,5 +27,9 @@ namespace DGT.Data.Abstract
         void Delete(T entity);
 
         void DeleteWhere(Expression<Func<T, bool>> predicate);
+
+        Task<IEnumerable<T>> AllIncludingAsync(params Expression<Func<T, object>>[] includeProperties);
+        Task<IEnumerable<T>> FindByIncludingAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
+        Task<T> GetSingleAsync(Expression<Func<T, bool>> predicate, params Expression<Func<T, object>>[] includeProperties);
     }
 }

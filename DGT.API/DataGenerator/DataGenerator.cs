@@ -24,11 +24,11 @@ namespace DGT.API.DataGenerator
 
         private static void Seed(DGTContext context)
         {
-            SeedMarcasCoches(context);
-            SeedModeloCoche(context);
+            SeedMarcasVehiculo(context);
+            SeedModeloVehiculo(context);
             SeedConductor(context);
             SeedTipoInfraccion(context);        
-            SeedCoches(context);
+            SeedVehiculo(context);
         }
 
       
@@ -58,24 +58,25 @@ namespace DGT.API.DataGenerator
                     Puntos = 10
                 }
                 );
+            context.SaveChanges();
         }
 
-        private static void SeedModeloCoche(DGTContext context)
+        private static void SeedModeloVehiculo(DGTContext context)
         {
             context.AddRange(
-                new ModeloCoche
+                new ModeloVehiculo
                 {
-                    Marca = context.MarcasCoche.First(),
+                    Marca = context.MarcasVehiculo.First(),
                     Nombre = "Mustang",
                 },
-                new ModeloCoche
+                new ModeloVehiculo
                 {
-                    Marca = context.MarcasCoche.First(),
+                    Marca = context.MarcasVehiculo.First(),
                     Nombre = "Jimmy",
                 },
-                new ModeloCoche
+                new ModeloVehiculo
                 {
-                    Marca = context.MarcasCoche.First(),
+                    Marca = context.MarcasVehiculo.First(),
                     Nombre = "Jedi",
                 });
 
@@ -100,29 +101,29 @@ namespace DGT.API.DataGenerator
             context.SaveChanges();
         }
 
-        private static void SeedCoches(DGTContext context)
+        private static void SeedVehiculo(DGTContext context)
         {
            
             context.AddRange(
-                new Coche
+                new Vehiculo
                 {
                     Matricula = "7652GRH",
-                    Modelo = context.ModelosCoche.First(),
-                    ConductoresHabituales = new CocheConductor[] {
-                        new CocheConductor {
+                    Modelo = context.ModelosVehiculo.First(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
                         DNI = "12341234R"
                     },
-                        new CocheConductor{
+                        new VehiculoConductor{
                         DNI ="22223333X"
                         }
                     }
                 },
-                new Coche
+                new Vehiculo
                 {
                     Matricula = "5343BIH",
-                    Modelo = context.ModelosCoche.Last(),
-                    ConductoresHabituales = new CocheConductor[] {
-                        new CocheConductor {
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
                         DNI = "43214321H"
                     }
                     }
@@ -132,15 +133,15 @@ namespace DGT.API.DataGenerator
             context.SaveChanges();
         }
 
-        private static void SeedMarcasCoches(DGTContext context)
+        private static void SeedMarcasVehiculo(DGTContext context)
         {
             context.AddRange(
-            new MarcaCoche() { Nombre = "Seat" },
-            new MarcaCoche() { Nombre = "Ford" },
-            new MarcaCoche() { Nombre = "Nissan" },
-            new MarcaCoche() { Nombre = "Fiat" },
-            new MarcaCoche() { Nombre = "Mazda" },
-            new MarcaCoche() { Nombre = "Jaguar" }
+            new MarcaVehiculo() { Nombre = "Seat" },
+            new MarcaVehiculo() { Nombre = "Ford" },
+            new MarcaVehiculo() { Nombre = "Nissan" },
+            new MarcaVehiculo() { Nombre = "Fiat" },
+            new MarcaVehiculo() { Nombre = "Mazda" },
+            new MarcaVehiculo() { Nombre = "Jaguar" }
             );
 
             context.SaveChanges();

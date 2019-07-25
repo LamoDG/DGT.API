@@ -13,16 +13,16 @@ namespace DGT.Domain.Models
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<CocheConductor>().HasKey(cc => new { cc.Matricula, cc.DNI });
+            modelBuilder.Entity<VehiculoConductor>().HasKey(cc => new { cc.Matricula, cc.DNI });
         }
 
 
 
-        public DbSet<Coche> Coches { get; set; }
+        public DbSet<Vehiculo> Vehiculo { get; set; }
         public DbSet<Conductor> Conductores { get; set; }
         public DbSet<Infraccion> Infracciones { get; set; }
-        public DbSet<MarcaCoche> MarcasCoche { get; set; }
-        public DbSet<ModeloCoche> ModelosCoche { get; set; }
+        public DbSet<MarcaVehiculo> MarcasVehiculo { get; set; }
+        public DbSet<ModeloVehiculo> ModelosVehiculo { get; set; }
         public DbSet<TipoInfraccion> TiposInfraccion { get; set; }
     }
 }

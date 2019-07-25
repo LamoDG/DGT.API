@@ -23,7 +23,7 @@ namespace DGT.API.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return Ok(_context.Coches.ToList());
+            return Ok(_context.Vehiculo.ToList());
         }
     }
 }
