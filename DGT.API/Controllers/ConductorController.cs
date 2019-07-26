@@ -30,5 +30,12 @@ namespace DGT.API.Controllers
             await _conductorService.Crear(_mapper.Map<Conductor>(conductor));
             return Ok();
         }
+        [HttpGet]
+        [Route("[action]/{numRecords}")]
+        public async Task<IActionResult> Top(int numRecords)
+        {
+            
+            return Ok(await _conductorService.Top(numRecords));
+        }
     }
 }
