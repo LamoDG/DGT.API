@@ -18,7 +18,7 @@ namespace DGT.Services.Services
         }
         public async Task Crear(Conductor conductor)
         {
-            if (PodemosCrearConductor(conductor))
+            if (await PodemosCrearConductor(conductor))
             {
                 _unitOfWork.Repository<IConductorRespository>().Add(conductor);
                 await _unitOfWork.SaveChangesAsync();
@@ -36,9 +36,11 @@ namespace DGT.Services.Services
 
         #region private
      
-        private bool PodemosCrearConductor(Conductor conductor)
+        private async Task<bool> PodemosCrearConductor(Conductor conductor)
         {
-            return ( _unitOfWork.Repository<IConductorRespository>().GetSingleAsync(cond => cond.DNI.Equals(conductor.DNI))) == null;
+            var co = await _unitOfWork.Repository<IConductorRespository>().GetSingleAsync(cond => cond.DNI.Equals(conductor.DNI));
+
+            return co == null;
 
         }
         #endregion

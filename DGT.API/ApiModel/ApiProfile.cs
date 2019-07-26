@@ -15,6 +15,7 @@ namespace DGT.API.ApiModel
             CreateMap<TipoInfraccionDto, TipoInfraccion>();
             CreateMap<VehiculoDto, Vehiculo>();
             CreateMap<VehiculoConductorDto, VehiculoConductor>();
+            CreateMap<ConductorDto, Conductor>();
         }
     }
 }
