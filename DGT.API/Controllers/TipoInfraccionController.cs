@@ -30,5 +30,18 @@ namespace DGT.API.Controllers
             await _tipoInfraccionService.Crear(_mapper.Map<TipoInfraccion>(tipoInfraccion));
             return Ok();
         }
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+
+            return Ok(await _tipoInfraccionService.GetAll());
+        }
+        [HttpGet]
+        [Route("[action]")]
+        public async Task<IActionResult> Top5InfraccionesHabituales()
+        {
+
+            return Ok(await _tipoInfraccionService.Top5InfraccionesHabituales());
+        }
     }
 }

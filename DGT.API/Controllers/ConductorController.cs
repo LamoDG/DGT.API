@@ -17,7 +17,7 @@ namespace DGT.API.Controllers
     {
         private readonly IMapper _mapper;
         private readonly IConductorService _conductorService;
-        public ConductorController(IConductorService conductorService,IMapper mapper)
+        public ConductorController(IConductorService conductorService, IMapper mapper)
         {
             _conductorService = conductorService;
             _mapper = mapper;

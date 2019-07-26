@@ -9,7 +9,7 @@ namespace DGT.Services.Abstract
     public interface ITipoInfraccionService
     {
         Task Crear(TipoInfraccion tipoInfraccion);
-
         Task<IEnumerable<TipoInfraccion>> Top5InfraccionesHabituales();
+        Task<IEnumerable<TipoInfraccion>> GetAll();
     }
 }

@@ -20,6 +20,12 @@ namespace DGT.Services.Services
             _unitOfWork.Repository<ITipoInfraccionRespository>().Add(tipoInfraccion);
             await _unitOfWork.SaveChangesAsync();
         }
+
+        public async Task<IEnumerable<TipoInfraccion>> GetAll()
+        {
+           return await _unitOfWork.Repository<ITipoInfraccionRespository>().GetAllAsync();
+        }
+
         public async Task<IEnumerable<TipoInfraccion>> Top5InfraccionesHabituales()
         {
             return await _unitOfWork.Repository<ITipoInfraccionRespository>().GetTopHabituales(5);

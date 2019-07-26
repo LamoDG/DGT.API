@@ -30,5 +30,11 @@ namespace DGT.API.Controllers
             await _infraccionService.Crear(_mapper.Map<Infraccion>(infraccion));
             return Ok();
         }
+        [HttpGet]
+        [Route("[action]/{DNI}")]
+        public async Task<IActionResult> Historial(string DNI)
+        {
+            return Ok(await _infraccionService.InfraccionesConductor(DNI));
+        }
     }
 }
