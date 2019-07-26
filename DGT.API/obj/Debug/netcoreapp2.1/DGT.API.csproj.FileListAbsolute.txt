@@ -1,0 +1,17 @@
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.API.deps.json
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.API.runtimeconfig.json
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.API.runtimeconfig.dev.json
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.API.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.API.pdb
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.Domain.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\bin\Debug\netcoreapp2.1\DGT.Domain.pdb
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.csprojAssemblyReference.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.csproj.CoreCompileInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.RazorAssemblyInfo.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.RazorAssemblyInfo.cs
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.AssemblyInfoInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.AssemblyInfo.cs
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.RazorTargetAssemblyInfo.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.csproj.CopyComplete
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.API\obj\Debug\netcoreapp2.1\DGT.API.pdb

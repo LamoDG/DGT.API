@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DGT.Data.Constants
+namespace DGT.Services.Constants
 {
     /// <summary>
     /// En esta clase incluiremos los datos que guardariamos en la bbdd para parametrización.  

@@ -104,6 +104,14 @@ namespace DGT.Data.Repositories
             return await query.ToListAsync();
         }
 
+        public virtual async Task<IEnumerable<T>> TopAsync(int numRecords)
+        {
+            return await _context.Set<T>().Take(numRecords).ToListAsync();
+        }
 
+        public virtual async Task<bool> Any(Expression<Func<T, bool>> predicate)
+        {
+            return await _context.Set<T>().AnyAsync(predicate);
+        }
     }
 }

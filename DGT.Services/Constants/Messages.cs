@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DGT.Data.Constants
+namespace DGT.Services.Constants
 {
     public class Messages
     {
@@ -14,7 +14,8 @@ namespace DGT.Data.Constants
         }
         public class Conductor
         {            
-            public static readonly string YA_EXISTE = $"El Conductor {YA_EXISTE_VAR}";
+            public static readonly string YA_EXISTE = $"El conductor {YA_EXISTE_VAR}";
+            public static readonly string MAX_COCHES_POR_CONDUTOR = $"El conductor ya tiene asociado 10 coches";
         }
 
     }

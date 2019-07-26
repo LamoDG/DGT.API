@@ -27,11 +27,11 @@ namespace DGT.API.DataGenerator
             SeedMarcasVehiculo(context);
             SeedModeloVehiculo(context);
             SeedConductor(context);
-            SeedTipoInfraccion(context);        
+            SeedTipoInfraccion(context);
             SeedVehiculo(context);
         }
 
-      
+
 
         private static void SeedConductor(DGTContext context)
         {
@@ -91,11 +91,11 @@ namespace DGT.API.DataGenerator
                     Descripccion = "Saltar Stop",
                     Puntos = 2,
                 },
-                     new TipoInfraccion
-                     {
-                         Descripccion = "Alcoholemia",
-                         Puntos = 5,
-                     }
+                new TipoInfraccion
+                {
+                    Descripccion = "Alcoholemia",
+                    Puntos = 5,
+                }
                 );
 
             context.SaveChanges();
@@ -103,7 +103,7 @@ namespace DGT.API.DataGenerator
 
         private static void SeedVehiculo(DGTContext context)
         {
-           
+
             context.AddRange(
                 new Vehiculo
                 {
@@ -127,9 +127,89 @@ namespace DGT.API.DataGenerator
                         DNI = "43214321H"
                     }
                     }
+                },//////
+                new Vehiculo
+                {
+                    Matricula = "1343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "2343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "3343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "4343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "6343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "7343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "8343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
+                },
+                new Vehiculo
+                {
+                    Matricula = "9343BIH",
+                    Modelo = context.ModelosVehiculo.Last(),
+                    ConductoresHabituales = new VehiculoConductor[] {
+                        new VehiculoConductor {
+                        DNI = "43214321H"
+                    }
+                    }
                 }
                 );
-            
+
             context.SaveChanges();
         }
 

@@ -1,0 +1,4 @@
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.1\DGT.Services.csprojAssemblyReference.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.1\DGT.Services.csproj.CoreCompileInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.1\DGT.Services.AssemblyInfoInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.1\DGT.Services.AssemblyInfo.cs

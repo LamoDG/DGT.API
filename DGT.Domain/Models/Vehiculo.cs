@@ -11,6 +11,8 @@ namespace DGT.Domain.Models
         [Key]
         public string Matricula { get; set; }
         public ICollection<VehiculoConductor> ConductoresHabituales { get; set; }
+        [ForeignKey("NombreModelo")]
         public ModeloVehiculo Modelo { get; set; }
+        public string NombreModelo { get; set; }
     }
 }

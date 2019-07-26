@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DGT.Data.Abstract
 {
@@ -13,9 +14,13 @@ namespace DGT.Data.Abstract
     {
 
     }
-    public interface IInfraccionesRespository : IEntityBaseRepository<Infraccion>
+    public interface IInfraccionRespository : IEntityBaseRepository<Infraccion>
     {
-
+        
+    }
+    public interface ITipoInfraccionRespository : IEntityBaseRepository<TipoInfraccion>
+    {
+        Task<IEnumerable<TipoInfraccion>> GetTopHabituales(int numRecords);
     }
 
 }

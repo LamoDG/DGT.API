@@ -1,0 +1,16 @@
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Services.deps.json
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Services.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Services.pdb
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Data.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Domain.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Data.pdb
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\DGT.Domain.pdb
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\bin\Debug\netcoreapp2.2\Microsoft.EntityFrameworkCore.xml
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.csprojAssemblyReference.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.csproj.CoreCompileInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.AssemblyInfoInputs.cache
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.AssemblyInfo.cs
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.csproj.CopyComplete
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.dll
+C:\Users\Temel9057\source\repos\DGT.API\DGT.Services\obj\Debug\netcoreapp2.2\DGT.Services.pdb

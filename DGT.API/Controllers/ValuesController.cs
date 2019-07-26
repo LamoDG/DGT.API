@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 using DGT.Domain.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace DGT.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class ValuesController : Controller
     {
         DGTContext _context;
 
@@ -21,9 +22,10 @@ namespace DGT.API.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok(_context.Vehiculo.ToList());
+            var result = await _context.Set<Vehiculo>().Include(v => v.ConductoresHabituales).ToListAsync();
+            return this.Json(result,new Newtonsoft.Json.JsonSerializerSettings() { ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore });
         }
     }
 }

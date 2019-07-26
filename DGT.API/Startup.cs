@@ -14,6 +14,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using AutoMapper;
+using DGT.Services.Abstract;
+using DGT.Services.Services;
+using DGT.Data.Abstract;
+using DGT.Data.Repositories;
 
 namespace DGT.API
 {
@@ -30,9 +35,29 @@ namespace DGT.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DGTContext>(opt => opt.UseInMemoryDatabase());
+       
+
+            // Unit Of Work
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            //Repositories
+            services.AddScoped<IConductorRespository, ConductorRespository>();
+            services.AddScoped<ITipoInfraccionRespository, TipoInfraccionRepository>();
+            services.AddScoped<IInfraccionRespository, InfraccionRepository>();
+            services.AddScoped<IVehiculoRespository, VehiculoRespository>();
+
+            //services
+            services.AddScoped<IConductorService, ConductorService>();
+            services.AddScoped<ITipoInfraccionService, TipoInfraccionService>();
+            services.AddScoped<IInfraccionService, InfraccionService>();
+            services.AddScoped<IVehiculoService, VehiculoService>();
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).ConfigureApiBehaviorOptions(options =>
+            {
+                options.SuppressUseValidationProblemDetailsForInvalidModelStateResponses = true;
+
+            });
             var key = Encoding.ASCII.GetBytes(Configuration.GetValue<string>("SecretKey"));
 
             services.AddAuthentication(x =>
@@ -51,6 +76,8 @@ namespace DGT.API
                     ValidateAudience = false
                 };
             });
+            
+            services.AddAutoMapper();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,12 +87,13 @@ namespace DGT.API
             {
                 app.UseDeveloperExceptionPage();
             }
-            else{
+            else
+            {
                 app.UseHsts();
             }
 
 
-      
+
             app.UseAuthentication();
             app.UseMvc();
         }
