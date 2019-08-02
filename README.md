@@ -53,9 +53,9 @@ POST: {{url}}/api/Infraccion/crear
 JSON:
 ```JSON
 {
-	"Matricula":"7652GRH",
-	"Fecha": "2015-02-26T00:00:00",
-	"TipoInfraccionId":2
+  "Matricula": "7652GRH",
+  "Fecha": "2015-02-26T00:00:00",
+  "TipoInfraccionId": 2
 }
 ```
 ### Crear tipo infracción
@@ -64,8 +64,8 @@ POST: {{url}}/api/TipoInfraccion/crear
 JSON:
 ```JSON
 {
-"Descripccion":"Exceso velocidad",
-"Puntos":5
+  "Descripccion": "Exceso velocidad",
+  "Puntos": 5
 }
 ```
 ### Crear vehículo
