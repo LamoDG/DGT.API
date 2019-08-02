@@ -51,72 +51,52 @@ En caso de no tener postman las llamadas y ejemplos son los siguientes:
 POST: {{url}}/api/Infraccion/crear
 
 JSON:
-
+```JSON
 {
-
-"Matricula":"7652GRH",
-
-"Fecha": "2015-02-26T00:00:00",
-
-"TipoInfraccionId":2
-
+	"Matricula":"7652GRH",
+	"Fecha": "2015-02-26T00:00:00",
+	"TipoInfraccionId":2
 }
-
+```
 ### Crear tipo infracción
 
 POST: {{url}}/api/TipoInfraccion/crear
-
 JSON:
-
+```JSON
 {
-
 "Descripccion":"Exceso velocidad",
-
 "Puntos":5
-
 }
-
+```
 ### Crear vehículo
 
 POST: {{url}}/api/vehiculo/crear
 
 JSON:
-
+```JSON
 {
-
-"Matricula": "6344Gzg",
-
-"NombreModelo": "Jimmy",
-
-"ConductoresHabituales": [
-
-{
-
-"DNI":"44442222R"
-
+  "Matricula": "6344Gzg",
+  "NombreModelo": "Jimmy",
+  "ConductoresHabituales": [
+    {
+      "DNI": "44442222R"
+    }
+  ]
 }
-
-]
-
-}
-
+```
 ### Crear conductor
 
 POST: {{url}}/api/Conductor/crear
 
 JSON:
-
+```JSON
 {
-
-"Apellidos": "Frotnera Luna",
-
-"DNI": "41234255R",
-
-"Nombre": "Biel",
-
-"Puntos": 10
-
+  "Apellidos": "Frotnera Luna",
+  "DNI": "41234255R",
+  "Nombre": "Biel",
+  "Puntos": 10
 }
+```
 
   
 
